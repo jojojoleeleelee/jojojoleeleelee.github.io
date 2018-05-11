@@ -102,4 +102,6 @@ In all, it was bittersweet when I got all the functions, routes and views runnin
 I immensely enjoyed this process, perhaps while I am refractoring this, I can add more functions and perhaps even expand some of the classes - class Verse (maybe?) and associate users and emotions in a has_many: through: association :)
 
 https://github.com/jojojoleeleelee/Confidant
+
+It really is one thing to take notes, practice, hone coding skills through labs and assignments given by the curriculum (all exceptional ways to learn, no doubt!) and then finally let loose and utilize all the acquired knowledge and build something complete new from scratch! It is an exhilerating feeling to know that the possibilities are really limitless!
 ***
