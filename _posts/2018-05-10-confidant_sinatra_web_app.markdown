@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Confidant, Sinatra Web App."
-date:       2018-05-11 01:42:03 +0000
+date:       2018-05-10 21:42:04 -0400
 permalink:  confidant_sinatra_web_app
 ---
 
