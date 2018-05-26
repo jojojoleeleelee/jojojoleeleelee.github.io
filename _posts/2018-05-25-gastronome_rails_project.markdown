@@ -1,25 +1,25 @@
 ---
 layout: post
 title:      "GASTRONOME:RAILS PROJECT"
-date:       2018-05-25 21:23:46 +0000
+date:       2018-05-25 17:23:47 -0400
 permalink:  gastronome_rails_project
 ---
 
 
-Before I begin, could I preface this blog post with this ... rather general statement.
+Before I begin,  I want to preface this blog post with this rather general statement.
 
 **Rails is magical.**
 
 It really is one magical beast.
-Likewise, one must be a **wizard**  to know the ins and outs, the temperament and comprehensive list of spells to cast at particular situations. 
+Likewise, one must be a **wizard**  to know the ins and outs, the temperament and comprehensive list of spells to cast for certain situations. 
 
-Well, general statements aside, let me walk you through how I built my project.
+Anyways. General statements aside, let me walk you through how I built my project.
 
-I always thought that it'd be great to have an actual application that manages my pantry. Something that kept track of the ingredients I currently have sitting on my cupboard, or possibly rotting in the back of my fridge.
+I always thought that it'd be great to have an actual application that manages my pantry. Or at least told me what was sitting in my pantry. Wouldn't it be nice to have somehting that kept track of the ingredients I currently have sitting on my cupboard, or possibly rotting in the back of my fridge? Yeah.
 
-So hence, the idea of this project.
+So hence, Gastronome.
 
-Gastronome - a recipe manager while making sure the ingredients in your pantry are utilized before it goes bad. 
+A recipe generator and pantry manager all in one. 
 
 
 ***THE MODELS***
@@ -48,12 +48,12 @@ recipe_id
 
 This is a snippet of my beginning thought process - 
 
-> **
+> 
 > This may be me being overtly ambitious, but honestly, who on earth has the time to fill in every single detailed instruction to their recipe? Nope. We live in a fast world, with impatient people. So SCRAPING TO THE RESCUE!
 > 
 > Websites I would like to scrape...
 > 
-> 1. kitchn - looks like a lot of React/Javascript. Could be more complex that I'd like.
+> 1. kitchn - looks like a lot of React/Javascript. Could be more complex than I'd like.
 > when I search quinoa carrot pepper I get zero results, though. Hmm.
 > https://www.thekitchn.com/search?q=quinoa+carrot+pepper
 > chocolate pudding is more promising:
@@ -71,11 +71,11 @@ This is a snippet of my beginning thought process -
 > A possible problem with scraping
 > should I scrape the whole entire page of the recipe?
 > For example, for FOOD52, there is a snippet of the recipe (optional)
-> and then a serving (e.g. serves: 2-4)
+> and then a serving size (e.g. serves: 2-4)
 > then a list of ingredients
 > and lastly a numerically divided... and rather comprehensive list of directions.
 > AND a photo too! (not always, but most of the time)
-> After I search, I should just grab the first three or else my already slow app will become even more unbearably slower. For example, the quinoa carrot rice search page put out 22 recipes in its first page... I don't want the app to be retrieving and scraping the detailed recipe of each and every one of those recipes. Yes, just three will do.
+> After I search, I should just grab the first three or else my already slow app will become even more unbearably slower. For example, the quinoa carrot rice search page put out 24 recipes in its first page... I don't want the app to be retrieving and scraping the detailed recipe of each and every one of those recipes. Yes, just three will do.
 > Let's try something with a typo... like instead of chocolate, our Mr. Joe is in a rush for his chocolate fix so he writes 'chocolat'. No worries, it still outputs 3,618 recipes
 > https://food52.com/recipes/search?q=chocolat
 > OR how about a REALLY BAD typo
@@ -98,7 +98,9 @@ This is a snippet of my beginning thought process -
 > > *
 > > 
 
-Things were off to a good start, until I got to scraping. Oh man. Scraping the websites were not.... NOT EASY! It took some serious scraping wizardry. And then for the users to be able to choose certain recipes and such, it became immensely complex. In fact, I'm planning on refractoring some of my code in my recipes controller. 
+Things were off to a good start, until I got to scraping. Oh man. Scraping the websites were.... **NOT EASY! ** 
+
+It took some serious scraping wizardry. And then for the users to be able to choose certain recipes and such, it became immensely complex. In fact, I'm planning on refractoring some of my code in my recipes controller. 
 
 Basically, I decided there was only one way to go. Make a whole new RecipeScraper class from scratch and plop it in the models.
 
@@ -188,6 +190,7 @@ Let me elaborate.
 It came in super handy. 
 
 
-Overall, this was perhaps the best way to learn how to code. By building. I really loved the blend of problem solving along with the creative process. 
+Overall, this was perhaps the best way to learn how to code, learn rails, learn ... life. By building. I really loved the blend of problem solving along with the creative process. 
 
 Time to go and actually cook myself a real meal :)
+Finally!
