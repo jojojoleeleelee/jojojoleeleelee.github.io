@@ -1,7 +1,7 @@
 ---
 layout: post
-title:      "Gastronome and its JS Upgrade"
-date:       2018-08-24 14:36:46 +0000
+title:      "Gastronome Got A JS Upgrade"
+date:       2018-08-24 10:36:47 -0400
 permalink:  gastronome_and_its_js_upgrade
 ---
 
