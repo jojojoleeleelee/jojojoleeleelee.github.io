@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Magnum Opus: LAMP"
-date:       2018-09-12 13:49:52 +0000
+date:       2018-09-12 09:49:53 -0400
 permalink:  magnum_opus_lamp
 ---
 
